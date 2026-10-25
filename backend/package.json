@@ -1,0 +1,29 @@
+{
+  "name": "q65-online-exam-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "set-demo-password": "node scripts/setDemoPassword.js",
+    "setup:local-auth": "node scripts/setupLocalAuth.js",
+    "test:auth-live": "node scripts/testAuthLive.js",
+    "test": "node --test",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "connect-mongo": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0"
+  }
+}
